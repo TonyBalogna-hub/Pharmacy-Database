@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1898" height="772" viewBox="0 0 1898 772" role="img" aria-label="Pharmacy Database work breakdown structure">
+<rect width="1898" height="772" fill="#FFFFFF"/>
+<g stroke="#444" stroke-width="2" fill="none" stroke-linecap="round"><path d="M949 95 V132 H249 M949 132 H1647"/>
+<path d="M249 132 V170 M249 250 V303"/>
+<path d="M249 393 V412"/>
+<path d="M249 502 V521"/>
+<path d="M249 611 V630"/>
+<path d="M715 132 V170 M715 250 V303"/>
+<path d="M715 393 V412"/>
+<path d="M715 502 V521"/>
+<path d="M715 611 V630"/>
+<path d="M1181 132 V170 M1181 250 V303"/>
+<path d="M1181 393 V412"/>
+<path d="M1181 502 V521"/>
+<path d="M1181 611 V630"/>
+<path d="M1647 132 V170 M1647 250 V303"/>
+<path d="M1647 393 V412"/>
+<path d="M1647 502 V521"/>
+</g>
+<rect x="759" y="25" width="380" height="70" rx="9" fill="#07B9A9"/><text x="949" y="66" font-family="Arial,sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#112020">Pharmacy Database</text>
+<rect x="44" y="170" width="410" height="80" rx="9" fill="#9C96F8"/>
+<text x="249" y="195" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">1. Database Design</text>
+<text x="249" y="218" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">and Setup</text>
+<text x="249" y="241" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#172033">DONE</text>
+<rect x="44" y="303" width="410" height="90" rx="8" fill="#E5E2FF"/>
+<text x="249" y="340" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">1.1 Project proposal</text>
+<text x="249" y="363" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and initial ER diagram</text>
+<rect x="44" y="412" width="410" height="90" rx="8" fill="#E5E2FF"/>
+<text x="249" y="449" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">1.2 Revise ER diagram</text>
+<text x="249" y="472" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">after feedback</text>
+<rect x="44" y="521" width="410" height="90" rx="8" fill="#E5E2FF"/>
+<text x="249" y="558" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">1.3 MySQL database</text>
+<text x="249" y="581" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and six tables</text>
+<rect x="44" y="630" width="410" height="90" rx="8" fill="#E5E2FF"/>
+<text x="249" y="667" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">1.4 Keys, relationships,</text>
+<text x="249" y="690" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and sample data</text>
+<rect x="510" y="170" width="410" height="80" rx="9" fill="#ED7BCC"/>
+<text x="715" y="195" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">2. Python and</text>
+<text x="715" y="218" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">Web Basics</text>
+<text x="715" y="241" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#172033">DONE</text>
+<rect x="510" y="303" width="410" height="90" rx="8" fill="#FBE0F2"/>
+<text x="715" y="340" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">2.1 Medication CRUD</text>
+<text x="715" y="363" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">menu in Python</text>
+<rect x="510" y="412" width="410" height="90" rx="8" fill="#FBE0F2"/>
+<text x="715" y="449" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">2.2 Supplier-medication</text>
+<text x="715" y="472" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">menu in Python</text>
+<rect x="510" y="521" width="410" height="90" rx="8" fill="#FBE0F2"/>
+<text x="715" y="558" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">2.3 Set up the</text>
+<text x="715" y="581" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">GitHub repository</text>
+<rect x="510" y="630" width="410" height="90" rx="8" fill="#FBE0F2"/>
+<text x="715" y="667" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">2.4 Basic Flask</text>
+<text x="715" y="690" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">inventory page</text>
+<rect x="976" y="170" width="410" height="80" rx="9" fill="#71B0FF"/>
+<text x="1181" y="207" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">3. Flask App</text>
+<text x="1181" y="241" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#172033">REMAINING</text>
+<rect x="976" y="303" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1181" y="334" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">3.1 Connect Flask</text>
+<text x="1181" y="357" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">to MySQL</text>
+<text x="1181" y="382" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Medium - needs 1.3, 2.4</text>
+<rect x="976" y="412" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1181" y="443" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">3.2 Medication CRUD</text>
+<text x="1181" y="466" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">in Flask</text>
+<text x="1181" y="491" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Large - needs 3.1</text>
+<rect x="976" y="521" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1181" y="552" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">3.3 Supplier-medication</text>
+<text x="1181" y="575" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">CRUD in Flask</text>
+<text x="1181" y="600" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Medium - needs 3.2</text>
+<rect x="976" y="630" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1181" y="661" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">3.4 User permissions</text>
+<text x="1181" y="684" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and input sanitization</text>
+<text x="1181" y="709" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Medium - needs 3.1</text>
+<rect x="1442" y="170" width="410" height="80" rx="9" fill="#71B0FF"/>
+<text x="1647" y="195" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">4. Finish and</text>
+<text x="1647" y="218" font-family="Arial,sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172033">Improve</text>
+<text x="1647" y="241" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#172033">REMAINING</text>
+<rect x="1442" y="303" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1647" y="334" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">4.1 Test website</text>
+<text x="1647" y="357" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and clean repository</text>
+<text x="1647" y="382" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Medium - needs 3.2-3.4</text>
+<rect x="1442" y="412" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1647" y="443" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">4.2 Final presentation</text>
+<text x="1647" y="466" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">and demo</text>
+<text x="1647" y="491" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Medium - needs 4.1</text>
+<rect x="1442" y="521" width="410" height="90" rx="8" fill="#DCEBFF"/>
+<text x="1647" y="552" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">4.3 After-class portfolio</text>
+<text x="1647" y="575" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#172033">Drug strengths, stock, README</text>
+<text x="1647" y="600" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#334155">Large - needs 4.2</text>
+</svg>

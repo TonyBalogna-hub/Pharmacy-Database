@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="ChatGPT" version="24.7.17">
+  <diagram id="pharmacy-wbs" name="Pharmacy Database WBS">
+    <mxGraphModel dx="1900" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1898" pageHeight="772" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="project" value="Pharmacy Database" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#07B9A9;fontColor=#172033;fontSize=26;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="759" y="25" width="380" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="phase1" value="1. Database Design&lt;br&gt;and Setup&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;DONE&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#9C96F8;fontColor=#172033;fontSize=19;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="44" y="170" width="410" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="root_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="project" target="phase1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node1_1" value="1.1 Project proposal&lt;br&gt;and initial ER diagram" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#E5E2FF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="44" y="303" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="phase1" target="node1_1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node1_2" value="1.2 Revise ER diagram&lt;br&gt;after feedback" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#E5E2FF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="44" y="412" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_1_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node1_1" target="node1_2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node1_3" value="1.3 MySQL database&lt;br&gt;and six tables" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#E5E2FF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="44" y="521" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_1_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node1_2" target="node1_3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node1_4" value="1.4 Keys, relationships,&lt;br&gt;and sample data" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#E5E2FF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="44" y="630" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_1_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node1_3" target="node1_4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="phase2" value="2. Python and&lt;br&gt;Web Basics&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;DONE&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#ED7BCC;fontColor=#172033;fontSize=19;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="170" width="410" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="root_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="project" target="phase2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node2_1" value="2.1 Medication CRUD&lt;br&gt;menu in Python" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FBE0F2;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="303" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_2_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="phase2" target="node2_1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node2_2" value="2.2 Supplier-medication&lt;br&gt;menu in Python" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FBE0F2;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="412" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_2_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node2_1" target="node2_2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node2_3" value="2.3 Set up the&lt;br&gt;GitHub repository" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FBE0F2;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="521" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_2_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node2_2" target="node2_3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node2_4" value="2.4 Basic Flask&lt;br&gt;inventory page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FBE0F2;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="630" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_2_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node2_3" target="node2_4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="phase3" value="3. Flask App&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;REMAINING&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#71B0FF;fontColor=#172033;fontSize=19;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="976" y="170" width="410" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="root_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="project" target="phase3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node3_1" value="3.1 Connect Flask&lt;br&gt;to MySQL&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Medium - needs 1.3, 2.4&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="976" y="303" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_3_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="phase3" target="node3_1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node3_2" value="3.2 Medication CRUD&lt;br&gt;in Flask&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Large - needs 3.1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="976" y="412" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_3_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node3_1" target="node3_2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node3_3" value="3.3 Supplier-medication&lt;br&gt;CRUD in Flask&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Medium - needs 3.2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="976" y="521" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_3_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node3_2" target="node3_3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node3_4" value="3.4 User permissions&lt;br&gt;and input sanitization&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Medium - needs 3.1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="976" y="630" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_3_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node3_3" target="node3_4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="phase4" value="4. Finish and&lt;br&gt;Improve&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;REMAINING&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#71B0FF;fontColor=#172033;fontSize=19;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1442" y="170" width="410" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="root_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="project" target="phase4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node4_1" value="4.1 Test website&lt;br&gt;and clean repository&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Medium - needs 3.2-3.4&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1442" y="303" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_4_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="phase4" target="node4_1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node4_2" value="4.2 Final presentation&lt;br&gt;and demo&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Medium - needs 4.1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1442" y="412" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_4_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node4_1" target="node4_2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="node4_3" value="4.3 After-class portfolio&lt;br&gt;Drug strengths, stock, README&lt;br&gt;&lt;font style=&quot;font-size:14px;color:#334155&quot;&gt;Large - needs 4.2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#DCEBFF;fontColor=#172033;fontSize=18;align=center;verticalAlign=middle;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1442" y="521" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="task_4_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#444444;strokeWidth=2;" edge="1" parent="1" source="node4_2" target="node4_3"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
