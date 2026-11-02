@@ -16,3 +16,9 @@ Completed:
 Still to do:
 - Make and push the latest SQL database backup
 - Finish the remaining project features and presentation
+- Created Flask web application to display supplier records
+- Added form to insert new suppliers
+- Added Edit buttons for existing suppliers
+- Created pre-filled forms to update supplier information
+- Added Delete buttons with confirmation
+- Tested all four CRUD operations

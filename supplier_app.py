@@ -1,7 +1,10 @@
 import os
 
 import mysql.connector
-from flask import Flask, redirect, render_template, request, url_for
+from dotenv import load_dotenv
+
+load_dotenv()
+from flask import Flask, abort, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 
@@ -15,25 +18,33 @@ def connect():
     )
 
 
+def get_fields():
+    return (
+        request.form.get("company", "").strip(),
+        request.form.get("phone", "").strip(),
+        request.form.get("address", "").strip(),
+    )
+
+
+def validate_fields(company, phone, address):
+    if not company or not phone or not address:
+        return "Please fill out every field."
+    if len(company) > 100 or len(phone) > 20 or len(address) > 200:
+        return "One of the fields is too long."
+    return None
+
+
 @app.route("/", methods=["GET", "POST"])
 def suppliers():
     error = None
 
     if request.method == "POST":
-        company = request.form.get("company", "").strip()
-        phone = request.form.get("phone", "").strip()
-        address = request.form.get("address", "").strip()
-
-        if not company or not phone or not address:
-            error = "Please fill out every field."
-        elif len(company) > 100 or len(phone) > 20 or len(address) > 200:
-            error = "One of the fields is too long."
-        else:
+        company, phone, address = get_fields()
+        error = validate_fields(company, phone, address)
+        if error is None:
             connection = connect()
             cursor = connection.cursor()
             try:
-                # The values are parameters, which prevents SQL injection.
-                # SupplierID is left out so MySQL assigns it automatically.
                 cursor.execute(
                     "INSERT INTO Supplier (CompanyName, PhoneNumber, Address) "
                     "VALUES (%s, %s, %s)",
@@ -57,8 +68,56 @@ def suppliers():
         cursor.close()
         connection.close()
 
-    # Flask/Jinja escapes the supplier text in the HTML template.
     return render_template("suppliers.html", suppliers=rows, error=error)
+
+
+@app.route("/edit/<int:supplier_id>", methods=["GET", "POST"])
+def edit_supplier(supplier_id):
+    error = None
+    connection = connect()
+    cursor = connection.cursor(dictionary=True)
+    try:
+        cursor.execute(
+            "SELECT SupplierID, CompanyName, PhoneNumber, Address "
+            "FROM Supplier WHERE SupplierID = %s",
+            (supplier_id,),
+        )
+        supplier = cursor.fetchone()
+        if supplier is None:
+            abort(404)
+
+        if request.method == "POST":
+            company, phone, address = get_fields()
+            error = validate_fields(company, phone, address)
+            if error is None:
+                cursor.execute(
+                    "UPDATE Supplier SET CompanyName = %s, PhoneNumber = %s, "
+                    "Address = %s WHERE SupplierID = %s",
+                    (company, phone, address, supplier_id),
+                )
+                connection.commit()
+                return redirect(url_for("suppliers"))
+            supplier.update(
+                CompanyName=company, PhoneNumber=phone, Address=address
+            )
+    finally:
+        cursor.close()
+        connection.close()
+
+    return render_template("edit_supplier.html", supplier=supplier, error=error)
+
+
+@app.route("/delete/<int:supplier_id>", methods=["POST"])
+def delete_supplier(supplier_id):
+    connection = connect()
+    cursor = connection.cursor()
+    try:
+        cursor.execute("DELETE FROM Supplier WHERE SupplierID = %s", (supplier_id,))
+        connection.commit()
+    finally:
+        cursor.close()
+        connection.close()
+    return redirect(url_for("suppliers"))
 
 
 if __name__ == "__main__":
