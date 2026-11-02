@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supplier Medications</title>
+</head>
+<body>
+    <h1>{{ supplier.CompanyName }}</h1>
+    <h2>Medications Supplied</h2>
+
+    <table border="1">
+        <tr>
+            <th>Medication ID</th>
+            <th>Medication Name</th>
+            <th>Dosage</th>
+        </tr>
+        {% for medication in medications %}
+        <tr>
+            <td>{{ medication.MedicationID }}</td>
+            <td>{{ medication.MedicationName }}</td>
+            <td>{{ medication.Dosage }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Add Medication</h2>
+
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    {% if available_medications %}
+    <form method="post">
+        <label>Medication:</label>
+        <select name="medication_id" required>
+            {% for medication in available_medications %}
+            <option value="{{ medication.MedicationID }}">
+                {{ medication.MedicationName }} - {{ medication.Dosage }}
+            </option>
+            {% endfor %}
+        </select>
+        <button type="submit">Add Medication</button>
+    </form>
+    {% else %}
+    <p>All available medications are already assigned to this supplier.</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('suppliers') }}">Back to Suppliers</a></p>
+</body>
+</html>

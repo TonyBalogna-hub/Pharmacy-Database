@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
         {% for supplier in suppliers %}
         <tr>
             <td>{{ supplier.SupplierID }}</td>
-            <td>{{ supplier.CompanyName }}</td>
+            <td><a href="{{ url_for('supplier_medications', supplier_id=supplier.SupplierID) }}">{{ supplier.CompanyName }}</a></td>
             <td>{{ supplier.PhoneNumber }}</td>
             <td>{{ supplier.Address }}</td>
             <td class="actions">
