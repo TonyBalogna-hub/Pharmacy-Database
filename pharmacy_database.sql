@@ -134,12 +134,12 @@ DROP TABLE IF EXISTS `Supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Supplier` (
-  `SupplierID` int unsigned NOT NULL,
+  `SupplierID` int unsigned NOT NULL AUTO_INCREMENT,
   `CompanyName` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `PhoneNumber` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Address` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`SupplierID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,7 +148,7 @@ CREATE TABLE `Supplier` (
 
 LOCK TABLES `Supplier` WRITE;
 /*!40000 ALTER TABLE `Supplier` DISABLE KEYS */;
-INSERT INTO `Supplier` VALUES (1,'ABC Pharmaceuticals','555-123-4567','123 Main Street'),(2,'Mountain Medical Supply','555-555-0128','42 Pine Avenue');
+INSERT INTO `Supplier` VALUES (1,'ABC Pharmaceuticals','555-123-4567','123 Main Street'),(2,'Mountain Medical Supply','555-555-0128','42 Pine Avenue'),(3,'Test','Test','Test');
 /*!40000 ALTER TABLE `Supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,4 +188,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-31  4:35:22
+-- Dump completed on 2026-11-02  4:57:07
